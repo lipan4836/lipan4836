@@ -40,9 +40,9 @@ Contact me
 
 ## 🤝 Collaborations
 
-[Tea Shop - shop based on Commercetools](https://github.com/lipan4836/Final-project-RS-CV)
+[Tea Shop - shop based on Commercetools](https://github.com/lipan4836/Final-project-RS-CV) - Implement main routing throuhg app, main and cart pages, supply managment on Commercetools side
 
-[REST/GraphQL Client](https://github.com/lipan4836/graphiql-app)
+[REST/GraphQL Client](https://github.com/lipan4836/graphiql-app) - implement main routing, main page, RESTful-client, main design
 
 ## Top languages
 
