@@ -43,6 +43,23 @@ Universal API client supporting both REST and GraphQL requests. The tool enables
 
 ___ ___ ___ ___
 
+## ⌨️ Projects
+
+- #### Native JS
+  - [Coffee house](https://lipan4836.github.io/lipan4836-JSFE2023Q4/coffee-house/pages/main/)
+  - [Christmas Shop](https://christmas-shop-pt3-lipan4836.netlify.app/pages/gifts/gifts)
+  - [Audio Player](https://rolling-scopes-school.github.io/lipan4836-JSFEPRESCHOOL2023Q2/audio-player/)
+- #### Games
+  - [Find your Waifu](https://rolling-scopes-school.github.io/lipan4836-JSFEPRESCHOOL2023Q2/random-game/)
+  - [Nonograms](https://nonograms-lipan4836.netlify.app/)
+  - [Hangman](https://lipan4836.github.io/lipan4836-JSFE2023Q4/hangman/)
+- #### API Integration
+  - [News (SPA, TS)](https://lipan4836.github.io/lipan4836-JSFE2023Q4/news-api/)
+  - [Naruto characters base (SPA, TS, React, Redux)](https://naruto-base-app-state-management.netlify.app)
+  - [Image finder Unsplash (JS)](https://rolling-scopes-school.github.io/lipan4836-JSFEPRESCHOOL2023Q2/image-galery/)
+
+___ ___ ___ ___
+
 ## 👨‍💻 Top languages
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lipan4836&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
