@@ -62,7 +62,7 @@ ___ ___ ___ ___
 
 ## 👨‍💻 Top languages
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lipan4836&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lipan4836&hide=css,html,scss&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
 ___ ___ ___ ___
 
