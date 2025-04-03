@@ -57,6 +57,9 @@ ___ ___ ___ ___
   - [News (SPA, TS)](https://lipan4836.github.io/lipan4836-JSFE2023Q4/news-api/)
   - [Naruto characters base (SPA, TS, React, Redux)](https://naruto-base-app-state-management.netlify.app)
   - [Image finder Unsplash (JS)](https://rolling-scopes-school.github.io/lipan4836-JSFEPRESCHOOL2023Q2/image-galery/)
+- ### Decision Making Tool
+  - [Native TS, SPA (code)](https://github.com/lipan4836/lipan4836-JSFE2024Q4/tree/decision-making-tool/decision-making-tool) | [Deploy](https://decision-making-tool-lipan4836.netlify.app/)
+  - [Vue, Pinia, SPA (code)](https://github.com/lipan4836/decision-making-tool/tree/decision-making-tool/vue/decision-making-tool) | [Deploy](https://easy-decision-vue-lipan4836.netlify.app/)
 
 ___ ___ ___ ___
 
