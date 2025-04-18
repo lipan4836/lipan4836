@@ -1,0 +1,25 @@
+.header {
+  background: #1E1E1E;
+  width: 100%;
+
+  .wrap {
+    max-width: 1024px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      
+      &_link {
+        padding: 4px 8px;
+      }
+    }
+  }
+  
+}
