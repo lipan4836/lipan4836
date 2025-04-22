@@ -18,12 +18,47 @@
 }
 
 .stack-cont {
-  width: 100%;
+  width: 80%;
+  position: relative;
+  min-height: 200px;
+  padding: 0 32px;
 
   .slide {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     padding: 10px;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+
+    &-in {
+      animation: slideIn 0.3s ease;
+    }
+  
+    &-out {
+      animation: slideOut 0.3s ease;
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 }
