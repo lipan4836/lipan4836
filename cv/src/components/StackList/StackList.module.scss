@@ -16,3 +16,14 @@
     }
   }
 }
+
+.stack-cont {
+  width: 100%;
+
+  .slide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px;
+  }
+}
