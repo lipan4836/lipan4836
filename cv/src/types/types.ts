@@ -9,3 +9,8 @@ export interface StackItemProps {
   idSprite: string;
   stackContent: string;
 }
+
+export enum SpriteNames {
+  STACK = 'stack-sprite',
+  SOCIAL = 'socials-sprite',
+}

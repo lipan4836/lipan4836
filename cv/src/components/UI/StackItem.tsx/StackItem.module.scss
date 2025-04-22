@@ -1,0 +1,14 @@
+.stack-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  &-content {
+    font-size: 12px;
+  }
+}

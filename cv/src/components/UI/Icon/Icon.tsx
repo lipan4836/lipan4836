@@ -1,7 +1,7 @@
-import type { ReactNode } from "react";
+import type { ReactElement } from "react";
 import type { IconProps } from "../../../types/types";
 
-function Icon({spriteName, idSprite, classes}: IconProps): ReactNode {
+function Icon({spriteName, idSprite, classes}: IconProps): ReactElement {
   return (
     <svg
       className={classes ? classes : ''}
