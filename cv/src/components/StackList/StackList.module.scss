@@ -18,7 +18,8 @@
 }
 
 .stack-cont {
-  width: 80%;
+  width: 370px;
+  height: 241px;
   position: relative;
   min-height: 200px;
   padding: 0 32px;
@@ -60,5 +61,42 @@
   to {
     opacity: 0;
     transform: translateY(-10px);
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &-active {
+      background-color: #1a1a1a;
+      transform: scale(1.2);
+    }
+    
+    &:hover {
+      background-color: #999;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dots {
+    gap: 6px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
   }
 }

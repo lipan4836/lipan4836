@@ -77,6 +77,16 @@ function StackList(): ReactElement {
           {tabs[activeTab].content}
         </div>
       </div>
+      <div className={styles.dots}>
+        {tabs.map((_, index) => (
+          <button
+            key={index}
+            className={`${styles.dot} ${index === activeTab ? styles['dot-active'] : ''}`}
+            onClick={() => handleTabChange(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </>
   );
 }
