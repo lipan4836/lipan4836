@@ -3,7 +3,7 @@ import styles from '../Main.module.scss';
 
 function NameContent(): ReactElement {
   return (
-    <div className={styles.wrap}>
+    <section className={styles.wrap}>
       <div className={styles.cont}>
         <img className={styles['cont_img']} src="/avatar.jpg" alt="Photo of Anton" />
         <div className={styles['cont_name-cont']}>
@@ -12,7 +12,7 @@ function NameContent(): ReactElement {
           <h3>Junior Front-End Developer</h3>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

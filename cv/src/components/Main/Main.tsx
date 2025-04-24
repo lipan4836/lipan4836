@@ -3,6 +3,7 @@ import styles from './Main.module.scss'
 import NameContent from "./subs/NameContent";
 import Summary from "./subs/Summary";
 import Stack from "./subs/Stack";
+import Education from "./subs/Education";
 
 function Main(): ReactElement {
   return (
@@ -11,6 +12,7 @@ function Main(): ReactElement {
       <div className={styles['cv-cont']}>
         <Summary />
         <Stack />
+        <Education />
       </div>
     </main>
   );

@@ -43,25 +43,58 @@
     justify-content: center;
     gap: 15px;
 
-    .summary {
+    .summary, .stack, .education {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 40%;
       padding: 10px;
+    }
 
+    .summary {
+      
       ul {
         width: 70%;
         transform: translateX(-22px);
+
+        li {
+          text-align: left;
+        }
       }
     }
 
-    .stack {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 40%;
-      padding: 10px;
+    .education {
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        a {
+          text-align: left;
+        }
+
+        .course {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          a {
+            text-align: left;
+          }
+
+          .stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            font-size: 14px;
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
     }
   }
 }

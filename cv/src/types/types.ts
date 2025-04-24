@@ -14,3 +14,12 @@ export enum SpriteNames {
   STACK = 'stack-sprite',
   SOCIAL = 'socials-sprite',
 }
+
+export interface CourseProps {
+  id: number;
+  courseName: string;
+  courseLink: string;
+  certificate: string;
+  position: number;
+  score: number;
+}
