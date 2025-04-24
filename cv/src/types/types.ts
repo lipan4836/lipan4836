@@ -29,3 +29,10 @@ export interface FlagProps {
   flagId: string;
   language: string;
 }
+
+export interface ContactProps {
+  id: number;
+  url: string;
+  content: string;
+  markId: string;
+}

@@ -47,7 +47,8 @@
     .stack,
     .education,
     .languages,
-    .code-example {
+    .code-example,
+    .contact {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -126,6 +127,21 @@
     .code-example {
       pre {
         font-size: 11px;
+      }
+    }
+
+    .contact {
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .link {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          justify-content: start;
+        }
       }
     }
   }

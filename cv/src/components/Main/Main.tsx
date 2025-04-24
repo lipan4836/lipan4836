@@ -6,6 +6,7 @@ import Stack from "./subs/Stack";
 import Education from "./subs/Education";
 import Languages from "./subs/Languages";
 import CodeExample from "./subs/CodeExample";
+import Contact from "./subs/Contact";
 
 function Main(): ReactElement {
   return (
@@ -17,6 +18,7 @@ function Main(): ReactElement {
         <Education />
         <Languages />
         <CodeExample />
+        <Contact />
       </div>
     </main>
   );
