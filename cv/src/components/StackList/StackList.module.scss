@@ -1,16 +1,16 @@
 .btns-wrap {
   display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
-  gap: 8px;
 
   .btn {
-    font-size: 10px;
     padding: 4px 8px;
+    font-size: 10px;
 
     &-active {
-      font-size: 10px;
       padding: 4px 8px;
+      font-size: 10px;
       color: #1a1a1a;
       background-color: #f9f9f9;
     }
@@ -18,9 +18,9 @@
 }
 
 .stack-cont {
+  position: relative;
   width: 370px;
   height: 241px;
-  position: relative;
   min-height: 200px;
   padding: 0 32px;
 
@@ -28,9 +28,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    justify-content: space-between;
     padding: 10px;
     transition: all 0.3s ease;
-    justify-content: space-between;
 
     &-in {
       animation: slideIn 0.3s ease;
@@ -44,45 +44,47 @@
 
 @keyframes slideIn {
   from {
-    opacity: 0;
     transform: translateY(10px);
+    opacity: 0;
   }
+
   to {
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideOut {
   from {
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
   }
+
   to {
-    opacity: 0;
     transform: translateY(-10px);
+    opacity: 0;
   }
 }
 
 .dots {
   display: flex;
-  justify-content: center;
   gap: 8px;
+  justify-content: center;
   margin-top: 16px;
 
   .dot {
+    cursor: pointer;
     width: 10px;
     height: 10px;
+    padding: 0;
+    border: none;
     border-radius: 50%;
     background-color: #ccc;
-    border: none;
-    cursor: pointer;
-    padding: 0;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
     &-active {
-      background-color: #1a1a1a;
       transform: scale(1.2);
+      background-color: #1a1a1a;
     }
     
     &:hover {
@@ -91,10 +93,11 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .dots {
     gap: 6px;
   }
+
   .dot {
     width: 8px;
     height: 8px;
