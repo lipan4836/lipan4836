@@ -23,3 +23,9 @@ export interface CourseProps {
   position: number;
   score: number;
 }
+
+export interface FlagProps {
+  id: number;
+  flagId: string;
+  language: string;
+}

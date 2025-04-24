@@ -4,6 +4,7 @@ import NameContent from "./subs/NameContent";
 import Summary from "./subs/Summary";
 import Stack from "./subs/Stack";
 import Education from "./subs/Education";
+import Languages from "./subs/Languages";
 
 function Main(): ReactElement {
   return (
@@ -13,6 +14,7 @@ function Main(): ReactElement {
         <Summary />
         <Stack />
         <Education />
+        <Languages />
       </div>
     </main>
   );

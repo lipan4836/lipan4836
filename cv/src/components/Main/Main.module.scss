@@ -43,7 +43,10 @@
     justify-content: center;
     gap: 15px;
 
-    .summary, .stack, .education {
+    .summary,
+    .stack,
+    .education,
+    .languages {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,6 +55,10 @@
     }
 
     .summary {
+
+      p {
+        margin: 0;
+      }
       
       ul {
         width: 70%;
@@ -92,6 +99,26 @@
             p {
               margin: 0;
             }
+          }
+        }
+      }
+    }
+
+    .languages {
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .lang-cont {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 16px;
+
+          p {
+            margin: 0;
           }
         }
       }
