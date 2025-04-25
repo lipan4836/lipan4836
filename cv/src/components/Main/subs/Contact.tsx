@@ -32,7 +32,7 @@ function Contact(): ReactElement {
   ]
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <h2>CONTACT ME</h2>
       <div className={styles.content}>
         {contactData.map((contact) => (

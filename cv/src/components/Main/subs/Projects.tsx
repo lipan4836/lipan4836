@@ -94,7 +94,7 @@ function Projects(): ReactElement {
   ]
 
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="projects">
       <h2>PROJECTS</h2>
       {
         projectsData.map((group) => (

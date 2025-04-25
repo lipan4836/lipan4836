@@ -31,7 +31,7 @@ function Collaborations(): ReactElement {
   ]
 
   return (
-    <section className={styles.collaborations}>
+    <section className={styles.collaborations} id="colls">
       <h2>COLLABORATIONS</h2>
       {collsList.map((coll) => (
         <div className={styles.item} key={coll.id}>

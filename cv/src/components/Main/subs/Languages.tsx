@@ -23,7 +23,7 @@ function Languages(): ReactElement {
   ]
 
   return (
-    <section className={styles.languages}>
+    <section className={styles.languages} id="languages">
       <h2>LANGUAGES</h2>
       <div className={styles.content}>
         {flagsData.map((flagData) => (

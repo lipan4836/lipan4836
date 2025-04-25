@@ -28,7 +28,7 @@ function CodeExample(): ReactElement {
   `;
 
   return (
-    <section className={styles['code-example']}>
+    <section className={styles['code-example']} id='example'>
       <h2>CODE EXAMPLE</h2>
       <SyntaxHighlighter language="typescript" style={tomorrow} customStyle={{ fontSize: '11px', padding: '20px' }}>
         {codeString}

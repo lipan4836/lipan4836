@@ -15,14 +15,17 @@ function Header(): ReactElement {
           <a className={styles['nav_link']} href="#education">
             Education
           </a>
-          <a className={styles['nav_link']} href="#language">
+          <a className={styles['nav_link']} href="#languages">
             Languages
           </a>
-          <a className={styles['nav_link']} href="#code">
+          <a className={styles['nav_link']} href="#example">
             Code Example
           </a>
           <a className={styles['nav_link']} href="#contact">
             Contact Info
+          </a>
+          <a className={styles['nav_link']} href="#colls">
+            Collaborations
           </a>
         </nav>
       </div>

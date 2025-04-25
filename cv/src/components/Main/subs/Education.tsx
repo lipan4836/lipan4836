@@ -31,7 +31,7 @@ function Education(): ReactElement {
   ]
 
   return (
-    <section className={styles.education}>
+    <section className={styles.education} id='education'>
       <h2>EDUCATION</h2>
       <div className={styles.content}>
         <a href="https://lspu-lipetsk.ru/" target="_blank" rel="noreferrer">

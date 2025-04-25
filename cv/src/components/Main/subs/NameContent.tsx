@@ -3,7 +3,7 @@ import styles from '../Main.module.scss';
 
 function NameContent(): ReactElement {
   return (
-    <section className={styles.wrap}>
+    <section className={styles.wrap} id='summary'>
       <div className={styles.cont}>
         <img className={styles['cont_img']} src="/avatar.jpg" alt="Photo of Anton" />
         <div className={styles['cont_name-cont']}>

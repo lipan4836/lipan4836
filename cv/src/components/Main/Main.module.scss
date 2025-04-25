@@ -34,6 +34,10 @@
           background-color: #fff;
         }
       }
+      
+      @media (prefers-color-scheme: light) {
+        color: #fff;
+      }
     }
   }
 
@@ -42,6 +46,8 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
     padding: 16px;
 
     .summary,
@@ -62,6 +68,7 @@
     .summary {
       p {
         margin: 0;
+        text-align: left;
       }
 
       ul {
@@ -129,8 +136,10 @@
 
     .code-example {
       pre {
+        width: 90%;
+        padding: 0;
         border-radius: 15px;
-        font-size: 11px;
+        font-size: 12px;
       }
     }
 
