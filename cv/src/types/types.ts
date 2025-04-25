@@ -36,3 +36,25 @@ export interface ContactProps {
   content: string;
   markId: string;
 }
+
+export interface ProjectProps {
+  id: number;
+  urlDeploy: string;
+  content: string;
+  urlCode?: string;
+}
+
+export interface ProjectsGroupsProps {
+  groupId: number;
+  groupName: string;
+  projectsProps: ProjectProps[]
+}
+
+export interface CollaborationProps {
+  id: number;
+  head: string;
+  urlCode: string;
+  urlDeploy?: string;
+  description: string;
+  contributions: string[];
+}

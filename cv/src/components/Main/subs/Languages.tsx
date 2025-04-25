@@ -16,7 +16,7 @@ function Languages(): ReactElement {
       language: 'English (B1)',
     },
     {
-      id: 1,
+      id: 3,
       flagId: 'flag-jp',
       language: 'Japanese (beginer)',
     },

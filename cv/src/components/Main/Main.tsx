@@ -7,6 +7,8 @@ import Education from "./subs/Education";
 import Languages from "./subs/Languages";
 import CodeExample from "./subs/CodeExample";
 import Contact from "./subs/Contact";
+import Projects from "./subs/Projects";
+import Collaborations from "./subs/Collaborations";
 
 function Main(): ReactElement {
   return (
@@ -19,6 +21,8 @@ function Main(): ReactElement {
         <Languages />
         <CodeExample />
         <Contact />
+        <Projects />
+        <Collaborations />
       </div>
     </main>
   );
