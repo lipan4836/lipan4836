@@ -51,6 +51,8 @@ function StackList(): ReactElement {
   ];
 
   const handleTabChange = (index: number): void => {
+    if (index === activeTab) return;
+
     setAnimationClass(styles['slide-out'])
     setTimeout(() => {
       setActiveTab(index)
@@ -67,6 +69,8 @@ function StackList(): ReactElement {
             key={index}
             className={index === activeTab ? styles['btn-active'] : styles.btn}
             onClick={() => handleTabChange(index)}
+            disabled={index === activeTab}
+            aria-disabled={index === activeTab}
           >
             {tab.name}
           </button>
@@ -83,7 +87,9 @@ function StackList(): ReactElement {
             key={index}
             className={`${styles.dot} ${index === activeTab ? styles['dot-active'] : ''}`}
             onClick={() => handleTabChange(index)}
+            disabled={index === activeTab}
             aria-label={`Go to slide ${index + 1}`}
+            aria-disabled={index === activeTab}
           />
         ))}
       </div>

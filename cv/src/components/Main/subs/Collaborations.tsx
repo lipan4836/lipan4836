@@ -35,7 +35,7 @@ function Collaborations(): ReactElement {
       <h2>COLLABORATIONS</h2>
       {collsList.map((coll) => (
         <div className={styles.item} key={coll.id}>
-          <a className={styles['item-head']} href={coll.urlCode} target="_blank">{coll.head}</a>
+          <a className={styles['item-head']} href={coll.urlCode} target="_blank" rel="noreferrer">{coll.head}</a>
           <p className={styles['item-disc']}>{coll.description}</p>
           {coll.urlDeploy
             && (<a className={styles['item-deploy']} href={coll.urlDeploy} target="_blank" rel="noreferrer">
