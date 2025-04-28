@@ -14,11 +14,24 @@
     }
 
     &-active {
+      cursor: auto;
       padding: 4px 8px;
       font-size: 10px;
       color: #1a1a1a;
       background-color: #c9c2c2;
-      cursor: auto;
+    }
+  }
+
+  @media (width <= 515px) {
+    flex-direction: column;
+    width: 100%;
+
+    .btn {
+      width: 100%;
+
+      &-active {
+        width: 100%;
+      }
     }
   }
 }
@@ -89,9 +102,9 @@
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
     &-active {
+      cursor: auto;
       transform: scale(1.2);
       background-color: #1a1a1a;
-      cursor: auto;
     }
     
     &:hover:not(:disabled) {

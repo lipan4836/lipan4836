@@ -3,7 +3,7 @@ import styles from '../Main.module.scss'
 
 function Summary(): ReactElement {
   return (
-    <section className={styles.summary} id="#summary">
+    <section className={styles.summary} id="summary">
       <h2>SUMMARY</h2>
       <p>
         A motivated and enthusiastic junior front-end developer with a passion for creating
