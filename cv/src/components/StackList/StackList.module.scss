@@ -59,6 +59,11 @@
       animation: slideOut 0.3s ease;
     }
   }
+
+  @media (width <= 451px) {
+    width: 300px;
+    padding: 0;
+  }
 }
 
 @keyframes slideIn {
