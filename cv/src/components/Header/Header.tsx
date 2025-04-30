@@ -1,5 +1,6 @@
 import { useEffect, useState, type ReactElement } from 'react';
 import styles from './Header.module.scss';
+import LangSwitch from '../UI/LangSwitch/LangSwitch';
 
 function Header(): ReactElement {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -23,10 +24,17 @@ function Header(): ReactElement {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = (): void => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.wrap}>
         <nav className={`${styles.nav} ${isMenuOpen ? styles['nav-open'] : ''}`}>
+          <div onClick={closeMenu}>
+            <LangSwitch />
+          </div>
           <a className={styles['nav_link']} href="#summary" onClick={() => setIsMenuOpen(false)}>
             About Me
           </a>
