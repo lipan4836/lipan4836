@@ -1,16 +1,23 @@
 import type { ReactElement} from 'react';
 import React, { useState } from 'react';
 import styles from './LangSwitch.module.scss';
+import { useTranslation } from 'react-i18next';
 
-type LangOption = 'ru' | 'eng';
+type LangOption = 'ru' | 'en';
 
 function LangSwitch(): ReactElement {
-  const [value, setValue] = useState<LangOption>('eng')
+  const { i18n } = useTranslation()
+  const [value, setValue] = useState<LangOption>('en')
+
+  const changeLanguage = (lang: string): void => {
+    i18n.changeLanguage(lang)
+    localStorage.setItem('i18nextLng', lang);
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const newValue = e.target.value
 
-    if (newValue === 'ru' || newValue === 'eng') setValue(newValue)
+    if (newValue === 'ru' || newValue === 'en') setValue(newValue)
   }
 
   return (
@@ -23,6 +30,7 @@ function LangSwitch(): ReactElement {
         type="radio"
         checked={value === 'ru'}
         onChange={handleChange}
+        onClick={() => changeLanguage('ru')}
       />
       <label htmlFor="toggle-on" className={styles.btn}>
         ru
@@ -32,13 +40,14 @@ function LangSwitch(): ReactElement {
         id="toggle-off"
         className={`${styles.toggle} ${styles.toggleRight}`}
         name="toggle"
-        value="eng"
+        value="en"
         type="radio"
-        checked={value === 'eng'}
+        checked={value === 'en'}
         onChange={handleChange}
+        onClick={() => changeLanguage('en')}
       />
       <label htmlFor="toggle-off" className={styles.btn}>
-        eng
+        en
       </label>
     </div>
   );

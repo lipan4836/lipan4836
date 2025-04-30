@@ -1,8 +1,10 @@
 import { useEffect, useState, type ReactElement } from 'react';
 import styles from './Header.module.scss';
 import LangSwitch from '../UI/LangSwitch/LangSwitch';
+import { useTranslation } from 'react-i18next';
 
 function Header(): ReactElement {
+  const { t } = useTranslation('header')
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -36,25 +38,25 @@ function Header(): ReactElement {
             <LangSwitch />
           </div>
           <a className={styles['nav_link']} href="#summary" onClick={() => setIsMenuOpen(false)}>
-            About Me
+            {t('about_me')}
           </a>
           <a className={styles['nav_link']} href="#stack" onClick={() => setIsMenuOpen(false)}>
-            Stack
+            {t('stack')}
           </a>
           <a className={styles['nav_link']} href="#education" onClick={() => setIsMenuOpen(false)}>
-            Education
+            {t('education')}
           </a>
           <a className={styles['nav_link']} href="#languages" onClick={() => setIsMenuOpen(false)}>
-            Languages
+          {t('languages')}
           </a>
           <a className={styles['nav_link']} href="#example" onClick={() => setIsMenuOpen(false)}>
-            Code Example
+          {t('code_example')}
           </a>
           <a className={styles['nav_link']} href="#contact" onClick={() => setIsMenuOpen(false)}>
-            Contact Info
+          {t('contacts')}
           </a>
           <a className={styles['nav_link']} href="#colls" onClick={() => setIsMenuOpen(false)}>
-            Collaborations
+          {t('collaborations')}
           </a>
         </nav>
         <button 
