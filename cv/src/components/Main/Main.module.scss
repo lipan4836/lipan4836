@@ -231,6 +231,10 @@
         flex-direction: column;
         align-items: flex-start;
 
+        a {
+          text-align: left;
+        }
+
         &-disc {
           text-align: left;
         }
