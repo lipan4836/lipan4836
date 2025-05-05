@@ -1,12 +1,15 @@
 import type { ReactElement } from 'react';
 import styles from '../Main.module.scss';
 import type { CourseProps } from '../../../types/types';
+import { useTranslation } from 'react-i18next';
 
 function Education(): ReactElement {
+  const { t } = useTranslation('main')
+
   const coursesData: CourseProps[] = [
     {
       id: 1,
-      courseName: 'RSSchool JavaScript / Front-end Course, Pre-school',
+      courseName: `${t('education.rsPre')}`,
       courseLink: 'https://rs.school/courses/javascript-preschool-ru',
       certificate: 'https://app.rs.school/certificate/sy2sclzm',
       position: 193,
@@ -14,7 +17,7 @@ function Education(): ReactElement {
     },
     {
       id: 2,
-      courseName: 'RSSchool JavaScript / Front-end Course',
+      courseName: `${t('education.rsJS')}`,
       courseLink: 'https://rs.school/courses/javascript-ru',
       certificate: 'https://app.rs.school/certificate/rr70czw1',
       position: 207,
@@ -22,7 +25,7 @@ function Education(): ReactElement {
     },
     {
       id: 3,
-      courseName: 'RSSchool React Course',
+      courseName: `${t('education.rsR')}`,
       courseLink: 'https://rs.school/courses/reactjs',
       certificate: 'https://app.rs.school/certificate/rr70czw1',
       position: 88,
@@ -32,10 +35,10 @@ function Education(): ReactElement {
 
   return (
     <section className={styles.education} id='education'>
-      <h2>EDUCATION</h2>
+      <h2>{t('education.head')}</h2>
       <div className={styles.content}>
         <a href="https://lspu-lipetsk.ru/" target="_blank" rel="noreferrer">
-          Lipetsk State Pedagogical University named after P.P. Semenov-Tyan-Shansky
+        {t('education.lgpu')}
         </a>
         {coursesData.map((course) => (
           <div className={styles.course} key={course.id}>
@@ -44,13 +47,13 @@ function Education(): ReactElement {
           </a>
           <div className={styles.stats}>
             <p>
-              Completed with{' '}
+              {t('education.complete')}{' '}
               <a href={course.certificate} target="_blank" rel="noreferrer">
-                certificate
+                {t('education.cert')}
               </a>
             </p>
-            <p>Position: {course.position}</p>
-            <p>Score: {course.score}</p>
+            <p>{t('education.pos')} {course.position}</p>
+            <p>{t('education.score')} {course.score}</p>
           </div>
         </div>
         ))}

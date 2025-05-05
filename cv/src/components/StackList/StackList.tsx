@@ -2,14 +2,16 @@ import { useState, type ReactElement } from "react";
 import styles from './StackList.module.scss'
 import StackItem from "../UI/StackItem.tsx/StackItem";
 import { SpriteNames } from "../../types/types";
+import { useTranslation } from "react-i18next";
 
 function StackList(): ReactElement {
+  const { t } = useTranslation('main')
   const [activeTab, setActiveTab] = useState<number>(0);
   const [animationClass, setAnimationClass] = useState('');
 
   const tabs = [
     {
-      name: "Frontend Development",
+      name: `${t('stack.btnFD')}`,
       content: (
         <>
           <StackItem stackName={SpriteNames.STACK} idSprite="html" stackContent="HTML" />
@@ -24,7 +26,7 @@ function StackList(): ReactElement {
       )
     },
     {
-      name: "State Management & Testing",
+      name: `${t('stack.btnST')}`,
       content: (
         <>
           <StackItem stackName={SpriteNames.STACK} idSprite="redux" stackContent="Redux" />
@@ -35,7 +37,7 @@ function StackList(): ReactElement {
       )
     },
     {
-      name: "Tools",
+      name: `${t('stack.btnT')}`,
       content: (
         <>
           <StackItem stackName={SpriteNames.STACK} idSprite="git" stackContent="Git" />

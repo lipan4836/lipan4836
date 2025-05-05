@@ -2,8 +2,11 @@ import type { ReactElement } from 'react';
 import styles from '../Main.module.scss';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { useTranslation } from 'react-i18next';
 
 function CodeExample(): ReactElement {
+  const { t } = useTranslation('main')
+
   const codeString = `
   function getRandomColor(): string {
     const str = '0123456789ABCDEF';
@@ -29,7 +32,7 @@ function CodeExample(): ReactElement {
 
   return (
     <section className={styles['code-example']} id='example'>
-      <h2>CODE EXAMPLE</h2>
+      <h2>{t('codeExample.head')}</h2>
       <SyntaxHighlighter language="typescript" style={tomorrow} customStyle={{ fontSize: '11px', padding: '20px' }}>
         {codeString}
       </SyntaxHighlighter>

@@ -7,12 +7,12 @@
     "head": "summary",
     "chap1": "A motivated and enthusiastic junior front-end developer with a passion for creating intuitive user interfaces. I am driven by the opportunity to work on projects where I can see the direct impact of my contributions.",
     "listHead": "Key Strength:",
-    "list": [
-      "Rapid learning abilities and strong self-motivation",
-      "Eagerness to tackle new challenges",
-      "Practical approach to development tasks",
-      "Focus on creating user-friendly interfaces"
-    ],
+    "list": {
+      "first": "Rapid learning abilities and strong self-motivation",
+      "second": "Eagerness to tackle new challenges",
+      "third": "Practical approach to development tasks",
+      "fourth": "Focus on creating user-friendly interfaces"
+    },
     "chap2": "I am committed to continuous learning and growth in the field of front-end development, aiming to contribute to the creation of high-quality web solutions."
   },
   "stack": {
@@ -36,7 +36,7 @@
     "head": "languages",
     "ru": "Russian",
     "en": "English (B1)",
-    "jp": "Japanese (brginer)"
+    "jp": "Japanese (beginer)"
   },
   "codeExample": {
     "head": "code example"
@@ -85,17 +85,17 @@
     "deploy":"Deploy Link",
     "contributions": "My contributions",
     "shopDisc": "Comprehensive e-commerce platform specializing in teas and coffees, featuring user registration, product browsing, filtering, and a fully functional shopping cart system. Built with a responsive design for seamless access across all devices.",
-    "shopList": [
-      "main routing throuhg app",
-      "main and cart pages",
-      "supply managment on Commercetools side"
-    ],
+    "shopList": {
+      "1": "main routing throuhg app",
+      "2": "main and cart pages",
+      "3": "supply managment on Commercetools side"
+    },
     "clientDisc": "Universal API client supporting both REST and GraphQL requests. The tool enables seamless management of headers, queries, variables, and request bodies, featuring an integrated history functionality for efficient workflow repetition.",
-    "clientList": [
-      "main routing",
-      "main page",
-      "RESTful-client",
-      "design"
-    ]
+    "clientList": {
+      "1": "main routing",
+      "2": "main page",
+      "3": "the logic of RESTful-client",
+      "4": "design"
+    }
   }
 }

@@ -1,26 +1,22 @@
 import type { ReactElement } from 'react';
 import styles from '../Main.module.scss'
+import { useTranslation } from 'react-i18next';
 
 function Summary(): ReactElement {
+  const { t } = useTranslation('main')
+
   return (
     <section className={styles.summary} id="summary">
-      <h2>SUMMARY</h2>
-      <p>
-        A motivated and enthusiastic junior front-end developer with a passion for creating
-        intuitive user interfaces. I am driven by the opportunity to work on projects where I can
-        see the direct impact of my contributions.
-      </p>
+      <h2>{t('summary.head')}</h2>
+      <p>{t('summary.chap1')}</p>
       <ul>
-        <strong>Key Strength:</strong>
-        <li>Rapid learning abilities and strong self-motivation</li>
-        <li>Eagerness to tackle new challenges</li>
-        <li>Practical approach to development tasks</li>
-        <li>Focus on creating user-friendly interfaces</li>
+        <strong>{t('summary.listHead')}</strong>
+        <li>{t('summary.list.first')}</li>
+        <li>{t('summary.list.second')}</li>
+        <li>{t('summary.list.third')}</li>
+        <li>{t('summary.list.fourth')}</li>
       </ul>
-      <p>
-        I am committed to continuous learning and growth in the field of front-end development,
-        aiming to contribute to the creation of high-quality web solutions.
-      </p>
+      <p>{t('summary.chap2')}</p>
     </section>
   );
 }

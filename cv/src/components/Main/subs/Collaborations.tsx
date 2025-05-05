@@ -1,47 +1,50 @@
 import type { ReactElement } from "react";
 import type { CollaborationProps } from "../../../types/types";
 import styles from '../Main.module.scss'
+import { useTranslation } from "react-i18next";
 
 function Collaborations(): ReactElement {
+  const { t } = useTranslation('main')
+  
   const collsList: CollaborationProps[] = [
     {
       id: 1,
-      head: 'Tea Shop - shop based on Commercetools',
+      head: `${t('colls.shop')}`,
       urlCode: 'https://github.com/lipan4836/Final-project-RS-CV',
-      description: 'Comprehensive e-commerce platform specializing in teas and coffees, featuring user registration, product browsing, filtering, and a fully functional shopping cart system. Built with a responsive design for seamless access across all devices.',
+      description: `${t('colls.shopDisc')}`,
       contributions: [
-        'main routing throuhg app',
-        'main and cart pages',
-        'supply managment on Commercetools side',
+        `${t('colls.shopList.1')}`,
+        `${t('colls.shopList.2')}`,
+        `${t('colls.shopList.3')}`,
       ],
     },
     {
       id: 2,
-      head: 'REST/GraphQL Client',
+      head: `${t('colls.client')}`,
       urlCode: 'https://github.com/lipan4836/graphiql-app',
       urlDeploy: 'https://rss-graphiql-client.netlify.app/',
-      description: 'Universal API client supporting both REST and GraphQL requests. The tool enables seamless management of headers, queries, variables, and request bodies, featuring an integrated history functionality for efficient workflow repetition.',
+      description: `${t('colls.clientDisc')}`,
       contributions: [
-        'main routing',
-        'main page',
-        'RESTful-client',
-        'design',
+        `${t('colls.clientList.1')}`,
+        `${t('colls.clientList.2')}`,
+        `${t('colls.clientList.3')}`,
+        `${t('colls.clientList.4')}`,
       ],
     },
   ]
 
   return (
     <section className={styles.collaborations} id="colls">
-      <h2>COLLABORATIONS</h2>
+      <h2>{t('colls.head')}</h2>
       {collsList.map((coll) => (
         <div className={styles.item} key={coll.id}>
           <a className={styles['item-head']} href={coll.urlCode} target="_blank" rel="noreferrer">{coll.head}</a>
           <p className={styles['item-disc']}>{coll.description}</p>
           {coll.urlDeploy
             && (<a className={styles['item-deploy']} href={coll.urlDeploy} target="_blank" rel="noreferrer">
-              Deploy Link
+              {t('colls.deploy')}
             </a>)}
-          <ul className={styles['item-list']}>My contributions
+          <ul className={styles['item-list']}>{t('colls.contributions')}
             {
               coll.contributions.map((contr, index) => (
                 <li key={index} className={styles['item-list_item-list']}>
