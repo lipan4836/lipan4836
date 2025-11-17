@@ -65,7 +65,7 @@ function Projects(): ReactElement {
         },
         {
           id: 3,
-          urlDeploy: 'Naruto characters base (SPA, TS, React, Redux)',
+          urlDeploy: 'https://rolling-scopes-school.github.io/lipan4836-JSFEPRESCHOOL2023Q2/image-galery/',
           content: `${t('projects.group.api.unsplash')}`,
         },
       ]
