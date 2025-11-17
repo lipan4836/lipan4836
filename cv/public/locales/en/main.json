@@ -97,5 +97,62 @@
       "3": "the logic of RESTful-client",
       "4": "design"
     }
+  },
+  "expa": {
+    "head": "Work Experience",
+    "data": [
+      {
+        "id": 1,
+        "title": "INHOUSE DIGITAL",
+        "position": "Frontend Developer",
+        "date": "December 2023 — November 2024",
+        "dutiesList": [
+          {
+            "dutyId": 1,
+            "dutyDisc": "Development and integration of custom JS scripts for WordPress landings, replacing slow plugins"
+          },
+          {
+            "dutyId": 2,
+            "dutyDisc": "Page load optimization: reduced response time by 20-30% through clean code and dependency minimization"
+          },
+          {
+            "dutyId": 3,
+            "dutyDisc": "Improved SEO parameters (loading speed, responsiveness) through manual layout refinement and asynchronous script loading"
+          },
+          {
+            "dutyId": 4,
+            "dutyDisc": "Website adaptation for mobile devices, fixing issues caused by builders"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Importo",
+        "position": "Frontend Developer",
+        "date": "June 2024 — October 2025",
+        "dutiesList": [
+          {
+            "dutyId": 1,
+            "dutyDisc": "Development and maintenance of the client part of the web application"
+          },
+          {
+            "dutyId": 2,
+            "dutyDisc": "Implementation of functionality and program logic according to technical specifications and architectural solutions"
+          },
+          {
+            "dutyId": 3,
+            "dutyDisc": "Refactoring of program code, search and bug fixing"
+          },
+          {
+            "dutyId": 4,
+            "dutyDisc": "Version control of program code, tracking code changes and managing them"
+          },
+          {
+            "dutyId": 5,
+            "dutyDisc": "Development and implementation of software modules integration, application and its components assembly"
+          }
+        ]
+      }
+    ]
   }
 }

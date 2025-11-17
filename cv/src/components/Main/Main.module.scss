@@ -102,7 +102,8 @@
     .code-example,
     .contact,
     .projects,
-    .collaborations {
+    .collaborations,
+    .expa {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -250,6 +251,19 @@
         }
       }
     }
+
+    .expa {
+      text-align: left;
+
+      .comp-title {
+        margin: 0;
+        font-weight: 400;
+      }
+
+      .date {
+        margin: 0;
+      }
+    }
     
     @media (width <= 1024px) {
       flex-flow: column wrap;
@@ -262,7 +276,8 @@
       .code-example,
       .contact,
       .projects,
-      .collaborations {
+      .collaborations,
+      .expa {
         width: 70%;
       }
     }
@@ -275,7 +290,8 @@
       .code-example,
       .contact,
       .projects,
-      .collaborations {
+      .collaborations,
+      .expa {
         width: 93%;
       }
     }
@@ -291,7 +307,8 @@
       .code-example,
       .contact,
       .projects,
-      .collaborations {
+      .collaborations,
+      .expa {
         width: 90%;
         padding: 0;
       }

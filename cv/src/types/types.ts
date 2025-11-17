@@ -47,7 +47,7 @@ export interface ProjectProps {
 export interface ProjectsGroupsProps {
   groupId: number;
   groupName: string;
-  projectsProps: ProjectProps[]
+  projectsProps: ProjectProps[];
 }
 
 export interface CollaborationProps {
@@ -57,4 +57,15 @@ export interface CollaborationProps {
   urlDeploy?: string;
   description: string;
   contributions: string[];
+}
+
+export interface ExperienceProps {
+  id: number;
+  title: string;
+  position: string;
+  date: string;
+  dutiesList: {
+    dutyId: number;
+    dutyDisc: string;
+  }[];
 }

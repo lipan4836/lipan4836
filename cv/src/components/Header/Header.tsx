@@ -58,6 +58,9 @@ function Header(): ReactElement {
           <a className={styles['nav_link']} href="#colls" onClick={() => setIsMenuOpen(false)}>
           {t('collaborations')}
           </a>
+          <a className={styles['nav_link']} href="#expa" onClick={() => setIsMenuOpen(false)}>
+          {t('expa')}
+          </a>
         </nav>
         <button 
           className={`${styles.burger} ${isMenuOpen ? styles['burger-open'] : ''}`}

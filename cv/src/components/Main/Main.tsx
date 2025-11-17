@@ -9,6 +9,7 @@ import CodeExample from "./subs/CodeExample";
 import Contact from "./subs/Contact";
 import Projects from "./subs/Projects";
 import Collaborations from "./subs/Collaborations";
+import Experience from "./subs/Experience";
 
 function Main(): ReactElement {
   return (
@@ -23,6 +24,7 @@ function Main(): ReactElement {
         <Contact />
         <Projects />
         <Collaborations />
+        <Experience />
       </div>
     </main>
   );
