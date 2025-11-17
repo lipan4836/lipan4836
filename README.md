@@ -65,6 +65,29 @@ ___ ___ ___ ___
 
 ___ ___ ___ ___
 
+## 💼 Work experience
+
+### INHOUSE DIGITAL
+Frontend Developer
+December 2023 — November 2024
+
+- Development and integration of custom JS scripts for WordPress landings, replacing slow plugins
+- Page load optimization: reduced response time by 20-30% through clean code and dependency minimization
+- Improved SEO parameters (loading speed, responsiveness) through manual layout refinement and asynchronous script loading
+- Website adaptation for mobile devices, fixing issues caused by builders
+
+### Importo
+Frontend Developer
+June 2024 — October 2025
+
+- Development and maintenance of the client part of the web application
+- Implementation of functionality and program logic according to technical specifications and architectural solutions
+- Refactoring of program code, search and bug fixing
+- Version control of program code, tracking code changes and managing them
+- Development and implementation of software modules integration, application and its components assembly
+
+___ ___ ___ ___
+
 ## 👨‍💻 Top languages
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lipan4836&hide=css,html,scss&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
