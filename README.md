@@ -86,6 +86,11 @@ June 2024 — October 2025
 - Version control of program code, tracking code changes and managing them
 - Development and implementation of software modules integration, application and its components assembly
 
+### Refound
+Frontend Developer
+since December 2025
+
+- Implementation chat system (SignalR)
 ___ ___ ___ ___
 
 ## 👨‍💻 Top languages
